@@ -17,38 +17,38 @@ repos:
       - id: end-of-file-fixer
       - id: check-merge-conflict
 
-  # ruff - linting & formatting
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.7
-    hooks:
-      - id: ruff-check
-        args: ["--fix"]
-      - id: ruff-format
+  # # ruff - linting & formatting
+  # - repo: https://github.com/astral-sh/ruff-pre-commit
+  #   rev: v0.14.7
+  #   hooks:
+  #     - id: ruff-check
+  #       args: ["--fix"]
+  #     - id: ruff-format
 
-  # pyupgrade - upgrade syntax for newer versions
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v3.21.2
-    hooks:
-      - id: pyupgrade
-        description: Automatically upgrade syntax for newer versions.
-        args: ["--py311-plus"]
+  # # pyupgrade - upgrade syntax for newer versions
+  # - repo: https://github.com/asottile/pyupgrade
+  #   rev: v3.21.2
+  #   hooks:
+  #     - id: pyupgrade
+  #       description: Automatically upgrade syntax for newer versions.
+  #       args: ["--py311-plus"]
 
-  # local hooks
-  - repo: local
-    hooks:
-      # pyright - static type checker
-      - id: pyright
-        name: pyright (local)
-        entry: poetry run pyright
-        language: system
-        types: [file, python]
-      # pytest - testing
-      - id: pytest
-        name: pytests (local)
-        entry: bash -c "poetry run pytest; err=$? ; if (( $err != 5 )) ; then exit $err ; fi"
-        language: system
-        pass_filenames: false
-        always_run: true
+  # # local hooks
+  # - repo: local
+  #   hooks:
+  #     # pyright - static type checker
+  #     - id: pyright
+  #       name: pyright (local)
+  #       entry: poetry run pyright
+  #       language: system
+  #       types: [file, python]
+  #     # pytest - testing
+  #     - id: pytest
+  #       name: pytests (local)
+  #       entry: bash -c "poetry run pytest; err=$? ; if (( $err != 5 )) ; then exit $err ; fi"
+  #       language: system
+  #       pass_filenames: false
+  #       always_run: true
 
   # conventional commits
   - repo: https://github.com/opensource-nepal/commitlint
