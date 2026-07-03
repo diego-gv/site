@@ -1,10 +1,13 @@
-site_name: im-diego.dev
-site_description: Proyectos y experimentos de Diego
+site_name: Diego S. García
+site_description: Senior Backend Developer + Python/Django
+
 theme:
   name: material
   language: es
+  logo: assets/images/logo-negative.svg
+  favicon: assets/images/favicon.svg
   features:
-    # - navigation.instant
+    - navigation.instant
     - navigation.tabs
     - content.code.copy
   palette:
@@ -24,7 +27,14 @@ theme:
 nav:
   - Home: index.md
   - Proyectos:
-    - Pendiente: proyectos/pending.md
+      - Pendiente: proyectos/pending.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/diegosalvadorgv/
+    - icon: fontawesome/brands/github
+      link: https://github.com/diego-gv
 
 extra_css:
   - stylesheets/extra.css

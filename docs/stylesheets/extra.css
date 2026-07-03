@@ -1,3 +1,4 @@
+/* Color palette: https://colorhunt.co/palette/ff9e20215e611d2128f4f2f2 */
 :root {
     --paper: #f4f2f2;
     --ink: #1d2128;
@@ -60,6 +61,15 @@ body[data-md-color-scheme="slate"] {
 .md-header__title,
 .md-tabs__link {
     color: #f4f2f2;
+}
+
+.md-search__form {
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.md-search__input {
+    border-radius: inherit;
 }
 
 body.is-home .md-sidebar--primary {
