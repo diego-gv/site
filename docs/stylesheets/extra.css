@@ -1,0 +1,307 @@
+:root {
+    --paper: #f4f2f2;
+    --ink: #1d2128;
+    --muted: #4b525e;
+    --card: rgba(255, 255, 255, 0.92);
+    --line: rgba(17, 34, 43, 0.14);
+    --accent: #ff9e20;
+    --accent-strong: #e28a16;
+    --accent-soft: #ffc267;
+    --teal: #215e61;
+    --shadow: 0 24px 52px rgba(6, 33, 45, 0.11);
+}
+
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: var(--paper);
+    --md-default-fg-color: var(--ink);
+    --md-primary-fg-color: var(--teal);
+    --md-primary-fg-color--light: #2a6f73;
+    --md-primary-fg-color--dark: #19494c;
+    --md-accent-fg-color: var(--accent);
+    --md-typeset-a-color: var(--accent);
+}
+
+[data-md-color-scheme="slate"] {
+    --paper: #1d2128;
+    --ink: #f4f2f2;
+    --muted: #ced2d6;
+    --card: rgba(37, 42, 51, 0.9);
+    --line: rgba(244, 242, 242, 0.2);
+    --shadow: 0 24px 52px rgba(0, 0, 0, 0.32);
+    --md-default-bg-color: var(--paper);
+    --md-default-fg-color: var(--ink);
+    --md-primary-fg-color: #215e61;
+    --md-primary-fg-color--light: #2a6f73;
+    --md-primary-fg-color--dark: #19494c;
+    --md-accent-fg-color: #ff9e20;
+    --md-typeset-a-color: #ff9e20;
+}
+
+body,
+body[data-md-color-scheme="default"] {
+    background: var(--paper);
+}
+
+body[data-md-color-scheme="slate"] {
+    background: var(--paper);
+}
+
+.md-header,
+.md-tabs {
+    background: linear-gradient(90deg, #215e61 0%, #2a6f73 100%);
+}
+
+.md-tabs__link--active,
+.md-nav__link--active {
+    color: #ff9e20;
+}
+
+.md-header__button.md-logo,
+.md-header__title,
+.md-tabs__link {
+    color: #f4f2f2;
+}
+
+body.is-home .md-sidebar--primary {
+    display: none;
+}
+
+.md-sidebar .md-nav__title {
+    background: transparent;
+    box-shadow: none;
+}
+
+body.is-home .md-sidebar--secondary {
+    display: none;
+}
+
+body.is-home .md-content {
+    max-width: none;
+}
+
+body.is-home .md-main__inner {
+    grid-template-columns: 1fr;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    font-family:
+        Charter, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+    letter-spacing: -0.02em;
+}
+
+.md-typeset {
+    color: var(--ink);
+}
+
+.hero-panel,
+.salary-app-shell,
+.detail-card,
+.salary-figure-card {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: var(--shadow);
+}
+
+.hero-panel {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 1.6rem;
+    border-radius: 28px;
+    margin: 1.5rem 0 1.2rem;
+}
+
+.hero-copy {
+    max-width: 52rem;
+    color: var(--muted);
+}
+
+.hero-metrics {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.metric-card,
+.bucket-row {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.metric-card strong,
+.bucket-row strong {
+    display: block;
+    font-size: 1.15rem;
+    margin-top: 0.3rem;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+}
+
+.salary-app-shell {
+    border-radius: 32px;
+    padding: 1.6rem;
+    overflow: hidden;
+}
+
+.salary-toolbar {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+}
+
+.control-block {
+    min-width: 180px;
+}
+
+.control-block span {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: var(--muted);
+    font-size: 0.86rem;
+}
+
+.control-block select,
+.window-switch button {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.94);
+    color: var(--ink);
+}
+
+.window-switch button:hover,
+.control-block select:hover {
+    border-color: rgba(8, 127, 115, 0.35);
+}
+
+.window-switch {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.window-switch button.is-active {
+    background: var(--accent-strong);
+    color: #effffb;
+    border-color: var(--accent-strong);
+}
+
+.salary-figure-card {
+    padding: 1.2rem;
+    border-radius: 26px;
+    margin-bottom: 1.2rem;
+}
+
+.chart-copy {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.chart-copy p:last-child {
+    max-width: 32rem;
+    color: var(--muted);
+}
+
+.salary-chart,
+.timeline-chart {
+    width: 100%;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 1rem;
+}
+
+.detail-card {
+    border-radius: 24px;
+    padding: 1.2rem;
+}
+
+.bucket-list {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.bucket-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.bucket-row span {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.source-note {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.chart-svg text,
+.timeline-svg text {
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+    fill: var(--muted);
+    font-size: 12px;
+}
+
+.cohort-dot {
+    fill: var(--accent);
+    stroke: rgba(255, 248, 238, 0.85);
+    stroke-width: 2;
+}
+
+.cohort-dot.alt {
+    fill: var(--teal);
+}
+
+.cohort-label {
+    font-size: 11px;
+}
+
+.timeline-area {
+    fill: rgba(5, 153, 139, 0.14);
+}
+
+.timeline-line,
+.main-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 3;
+}
+
+.guide-line {
+    stroke: rgba(27, 26, 23, 0.1);
+    stroke-dasharray: 4 6;
+}
+
+@media (max-width: 960px) {
+    .hero-panel,
+    .detail-grid,
+    .chart-copy {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .bucket-row {
+        grid-template-columns: 1fr;
+    }
+}

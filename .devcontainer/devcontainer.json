@@ -1,0 +1,98 @@
+{
+    // 👇 devcontainer name
+    "name": "im-diego.es",
+
+    // 🛠 Modifications over Dockerfile/Compose
+    // --------------------------------------
+    // 👇 Use the devcontainer in docker mode
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+
+    // 👇 Folder to which the editor is connected, like "WORKDIR" instruction
+    "workspaceFolder": "/local",
+
+    // 👇 Additional mounts for container
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/local,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.codex,target=/home/vscode/.codex,type=bind",
+        "source=${localEnv:HOME}/.copilot,target=/home/vscode/.copilot,type=bind",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
+        "source=${localEnv:HOME}/.bashrc,target=/home/vscode/.bashrc,type=bind,readonly",
+        "source=/tmp,target=/tmp,type=bind"
+    ],
+
+    // 👇 Ports configuration for container
+    "forwardPorts": [8000],
+    "portsAttributes": {
+        "8000": {
+            "label": "MkDocs",
+            "onAutoForward": "openBrowserOnce"
+        }
+    },
+
+    // 🛠 VSCode configuration
+    // --------------------------------------
+    // 👇 Configure tool-specific properties, settings and extensions.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // "ms-python.mypy-type-checker",
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "jannchie.ruff-ignore-explainer",
+                "yzhang.markdown-all-in-one"
+            ],
+            "settings": {
+                "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.ruff": "explicit",
+                        "source.organizeImports.ruff": "explicit"
+                    },
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "charliermarsh.ruff"
+                },
+                "python.analysis.diagnosticSeverityOverrides": {
+                    "reportArgumentType": "none",
+                    "reportAttributeAccessIssue": "none",
+                    "reportMissingTypeStubs": "none"
+                },
+                "python.analysis.autoImportCompletions": true,
+                "python.analysis.enablePytestSupport": true,
+                "python.analysis.extraPaths": [],
+                "python.analysis.importFormat": "relative",
+                "python.analysis.include": ["."],
+                "python.analysis.typeCheckingMode": "basic",
+                "python.defaultInterpreterPath": "/usr/local/bin/python3",
+                "python.languageServer": "Pylance",
+                "python.testing.pytestArgs": [
+                    ".",
+                    "-c=pyproject.toml"
+                ],
+                "python.testing.autoTestDiscoverOnSaveEnabled": true,
+                "python.testing.pytestEnabled": true,
+                "python.testing.unittestEnabled": false,
+                "ruff.configuration": "pyproject.toml"
+            }
+        }
+    },
+
+    // 🛠 devcontainer features configuration
+    // --------------------------------------
+    // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/sshd:1": {},
+        "ghcr.io/jungaretti/features/vim:1": {},
+    },
+
+    // 👇 Commands to run after the container is started.
+    "postAttachCommand": {
+        "pre-commit": "pre-commit install --install-hooks"
+    },
+
+    // 👇 User to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    "remoteUser": "vscode",
+    "containerUser": "vscode"
+}

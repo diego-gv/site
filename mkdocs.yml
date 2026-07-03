@@ -1,0 +1,35 @@
+site_name: im-diego.dev
+site_description: Proyectos y experimentos de Diego
+theme:
+  name: material
+  language: es
+  features:
+    # - navigation.instant
+    - navigation.tabs
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Activar modo claro
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Activar modo oscuro
+
+nav:
+  - Home: index.md
+  - Proyectos:
+    - Pendiente: proyectos/pending.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
