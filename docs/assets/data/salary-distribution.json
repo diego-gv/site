@@ -1,0 +1,939 @@
+{
+  "source": {
+    "dataset": "modelo190_salarios.csv",
+    "scope": "Espa\u00f1a, filas agregadas CCAA=77 y PROV=99",
+    "note": "La visualizaci\u00f3n se construye a partir de salarios agregados por cohorte de edad. No representa microdatos individuales ni un histograma exacto de sueldos."
+  },
+  "available_years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "series": [
+    {
+      "year": 2009,
+      "average_salary": 21591.19,
+      "employee_count": 58784,
+      "salary_mass": 1269216274.45,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 1041377.25,
+          "employee_count": 240,
+          "average_salary": 4339.07
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 86970585.1,
+          "employee_count": 8196,
+          "average_salary": 10611.35
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 313762897.41,
+          "employee_count": 16793,
+          "average_salary": 18684.15
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 351277918.72,
+          "employee_count": 15227,
+          "average_salary": 23069.41
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 339747484.97,
+          "employee_count": 12239,
+          "average_salary": 27759.42
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 166318805.39,
+          "employee_count": 5354,
+          "average_salary": 31064.4
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 10097205.61,
+          "employee_count": 735,
+          "average_salary": 13737.69
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "average_salary": 22027.29,
+      "employee_count": 57523,
+      "salary_mass": 1267075847.83,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 836807.02,
+          "employee_count": 180,
+          "average_salary": 4648.93
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 78794492.47,
+          "employee_count": 7770,
+          "average_salary": 10140.86
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 304480059.78,
+          "employee_count": 16327,
+          "average_salary": 18648.87
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 346749446.77,
+          "employee_count": 14676,
+          "average_salary": 23626.97
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 350143636.86,
+          "employee_count": 12423,
+          "average_salary": 28185.11
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 174544396.91,
+          "employee_count": 5480,
+          "average_salary": 31851.17
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 11527008.02,
+          "employee_count": 667,
+          "average_salary": 17281.87
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "average_salary": 21521.54,
+      "employee_count": 58646,
+      "salary_mass": 1262152290.78,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 831523.53,
+          "employee_count": 162,
+          "average_salary": 5132.86
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 67800442.6,
+          "employee_count": 7317,
+          "average_salary": 9266.15
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 292811774.38,
+          "employee_count": 16308,
+          "average_salary": 17955.1
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 347474219.77,
+          "employee_count": 15080,
+          "average_salary": 23042.06
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 353569266.1,
+          "employee_count": 13108,
+          "average_salary": 26973.55
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 188177846.08,
+          "employee_count": 5945,
+          "average_salary": 31653.13
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 11487218.32,
+          "employee_count": 726,
+          "average_salary": 15822.61
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "average_salary": 21820.21,
+      "employee_count": 54966,
+      "salary_mass": 1199369722.87,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 868681.73,
+          "employee_count": 143,
+          "average_salary": 6074.7
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 54315785.1,
+          "employee_count": 6132,
+          "average_salary": 8857.76
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 268991017.31,
+          "employee_count": 15389,
+          "average_salary": 17479.43
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 331568595.55,
+          "employee_count": 14233,
+          "average_salary": 23295.76
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 343613650.14,
+          "employee_count": 12456,
+          "average_salary": 27586.2
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 189125911.48,
+          "employee_count": 5943,
+          "average_salary": 31823.31
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 10886081.56,
+          "employee_count": 670,
+          "average_salary": 16247.88
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "average_salary": 21761.88,
+      "employee_count": 56475,
+      "salary_mass": 1229002346.43,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 976866.59,
+          "employee_count": 144,
+          "average_salary": 6783.8
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 46564510.02,
+          "employee_count": 5996,
+          "average_salary": 7765.93
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 263906713.55,
+          "employee_count": 15526,
+          "average_salary": 16997.73
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 339816418.39,
+          "employee_count": 14764,
+          "average_salary": 23016.56
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 355196332.78,
+          "employee_count": 12884,
+          "average_salary": 27568.79
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 212092231.57,
+          "employee_count": 6508,
+          "average_salary": 32589.46
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 10449273.53,
+          "employee_count": 653,
+          "average_salary": 16001.95
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "average_salary": 21904.66,
+      "employee_count": 55801,
+      "salary_mass": 1222302156.99,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 488661.31,
+          "employee_count": 136,
+          "average_salary": 3593.1
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 39296315.77,
+          "employee_count": 5754,
+          "average_salary": 6829.39
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 251805205.54,
+          "employee_count": 15133,
+          "average_salary": 16639.48
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 340474334.93,
+          "employee_count": 14706,
+          "average_salary": 23152.07
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 353955884.33,
+          "employee_count": 12638,
+          "average_salary": 28007.27
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 225922054.05,
+          "employee_count": 6871,
+          "average_salary": 32880.52
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 10359701.06,
+          "employee_count": 563,
+          "average_salary": 18400.89
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "average_salary": 21502.45,
+      "employee_count": 58292,
+      "salary_mass": 1253421035.25,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 471133.55,
+          "employee_count": 114,
+          "average_salary": 4132.75
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 37828233.17,
+          "employee_count": 6109,
+          "average_salary": 6192.21
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 246798129.98,
+          "employee_count": 15438,
+          "average_salary": 15986.41
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 350200257.48,
+          "employee_count": 15233,
+          "average_salary": 22989.58
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 360643501.93,
+          "employee_count": 12953,
+          "average_salary": 27842.47
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 245723277.76,
+          "employee_count": 7517,
+          "average_salary": 32689.01
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 11756501.38,
+          "employee_count": 928,
+          "average_salary": 12668.64
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "average_salary": 21409.21,
+      "employee_count": 59522,
+      "salary_mass": 1274318868.41,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 209717.01,
+          "employee_count": 68,
+          "average_salary": 3084.07
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 37838598.73,
+          "employee_count": 6038,
+          "average_salary": 6266.74
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 239209082.41,
+          "employee_count": 15222,
+          "average_salary": 15714.69
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 358591660.59,
+          "employee_count": 15710,
+          "average_salary": 22825.69
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 362806038.46,
+          "employee_count": 13185,
+          "average_salary": 27516.57
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 262753237.32,
+          "employee_count": 8173,
+          "average_salary": 32148.93
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 12910533.89,
+          "employee_count": 1126,
+          "average_salary": 11465.84
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "average_salary": 21415.01,
+      "employee_count": 59966,
+      "salary_mass": 1284172621.49,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 183457.3,
+          "employee_count": 103,
+          "average_salary": 1781.14
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 38886020.99,
+          "employee_count": 6325,
+          "average_salary": 6147.99
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 232070874.5,
+          "employee_count": 14997,
+          "average_salary": 15474.49
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 361025455.6,
+          "employee_count": 15947,
+          "average_salary": 22639.08
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 364466586.92,
+          "employee_count": 13485,
+          "average_salary": 27027.56
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 273348361.45,
+          "employee_count": 8503,
+          "average_salary": 32147.28
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 14191864.73,
+          "employee_count": 606,
+          "average_salary": 23418.92
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "average_salary": 21625.02,
+      "employee_count": 62886,
+      "salary_mass": 1359911080.52,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 231191.16,
+          "employee_count": 133,
+          "average_salary": 1738.28
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 46239715.75,
+          "employee_count": 7069,
+          "average_salary": 6541.2
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 242820610.11,
+          "employee_count": 15396,
+          "average_salary": 15771.67
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 377154332.49,
+          "employee_count": 16461,
+          "average_salary": 22911.99
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 382837726.14,
+          "employee_count": 13974,
+          "average_salary": 27396.43
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 294532523.93,
+          "employee_count": 9162,
+          "average_salary": 32147.19
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 16094980.94,
+          "employee_count": 691,
+          "average_salary": 23292.3
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "average_salary": 22439.18,
+      "employee_count": 63395,
+      "salary_mass": 1422531935.49,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 307798.18,
+          "employee_count": 161,
+          "average_salary": 1911.79
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 52106033.54,
+          "employee_count": 7316,
+          "average_salary": 7122.2
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 250541347.28,
+          "employee_count": 15212,
+          "average_salary": 16469.98
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 391426191.25,
+          "employee_count": 16530,
+          "average_salary": 23679.75
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 398802135.07,
+          "employee_count": 14057,
+          "average_salary": 28370.36
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 312032371.45,
+          "employee_count": 9400,
+          "average_salary": 33194.93
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 17316058.72,
+          "employee_count": 719,
+          "average_salary": 24083.53
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "average_salary": 22730.61,
+      "employee_count": 61001,
+      "salary_mass": 1386590179.23,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 206222.39,
+          "employee_count": 97,
+          "average_salary": 2126.0
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 48016786.06,
+          "employee_count": 6567,
+          "average_salary": 7311.83
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 236700636.47,
+          "employee_count": 14381,
+          "average_salary": 16459.26
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 374492301.22,
+          "employee_count": 15854,
+          "average_salary": 23621.31
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 389385731.75,
+          "employee_count": 13746,
+          "average_salary": 28327.2
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 318431318.46,
+          "employee_count": 9642,
+          "average_salary": 33025.44
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 19357182.88,
+          "employee_count": 714,
+          "average_salary": 27110.9
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "average_salary": 22918.94,
+      "employee_count": 64333,
+      "salary_mass": 1474444004.5,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 356648.3,
+          "employee_count": 173,
+          "average_salary": 2061.55
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 61634684.93,
+          "employee_count": 8013,
+          "average_salary": 7691.84
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 255481184.26,
+          "employee_count": 14782,
+          "average_salary": 17283.26
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 390026454.69,
+          "employee_count": 16020,
+          "average_salary": 24346.22
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 410621598.32,
+          "employee_count": 14293,
+          "average_salary": 28728.86
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 334575235.75,
+          "employee_count": 10171,
+          "average_salary": 32895.02
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 21748198.25,
+          "employee_count": 881,
+          "average_salary": 24685.81
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "average_salary": 23082.23,
+      "employee_count": 69363,
+      "salary_mass": 1601052647.79,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 324524.74,
+          "employee_count": 201,
+          "average_salary": 1614.55
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 84523810.46,
+          "employee_count": 10150,
+          "average_salary": 8327.47
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 279597890.87,
+          "employee_count": 15832,
+          "average_salary": 17660.3
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 411442806.13,
+          "employee_count": 16652,
+          "average_salary": 24708.31
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 439231632.16,
+          "employee_count": 14977,
+          "average_salary": 29327.08
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 360136478.64,
+          "employee_count": 10625,
+          "average_salary": 33895.2
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 25795504.79,
+          "employee_count": 926,
+          "average_salary": 27856.92
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "average_salary": 24024.93,
+      "employee_count": 70623,
+      "salary_mass": 1696712874.58,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 550933.06,
+          "employee_count": 237,
+          "average_salary": 2324.61
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 100604030.42,
+          "employee_count": 10858,
+          "average_salary": 9265.43
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 298050864.03,
+          "employee_count": 16090,
+          "average_salary": 18523.98
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 419552637.24,
+          "employee_count": 16362,
+          "average_salary": 25641.89
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 463208378.99,
+          "employee_count": 15053,
+          "average_salary": 30771.83
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 383446841.25,
+          "employee_count": 10944,
+          "average_salary": 35037.17
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 31299189.59,
+          "employee_count": 1079,
+          "average_salary": 29007.59
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "average_salary": 25301.95,
+      "employee_count": 70237,
+      "salary_mass": 1777133019.56,
+      "buckets": [
+        {
+          "id": "lt18",
+          "label": "Menores de 18",
+          "salary_mass": 511052.14,
+          "employee_count": 286,
+          "average_salary": 1786.9
+        },
+        {
+          "id": "18_25",
+          "label": "18 a 25",
+          "salary_mass": 105074120.83,
+          "employee_count": 10785,
+          "average_salary": 9742.62
+        },
+        {
+          "id": "26_35",
+          "label": "26 a 35",
+          "salary_mass": 311892475.01,
+          "employee_count": 15885,
+          "average_salary": 19634.4
+        },
+        {
+          "id": "36_45",
+          "label": "36 a 45",
+          "salary_mass": 429811980.69,
+          "employee_count": 15885,
+          "average_salary": 27057.73
+        },
+        {
+          "id": "46_55",
+          "label": "46 a 55",
+          "salary_mass": 487301356.59,
+          "employee_count": 15131,
+          "average_salary": 32205.5
+        },
+        {
+          "id": "56_65",
+          "label": "56 a 65",
+          "salary_mass": 404907754.17,
+          "employee_count": 10908,
+          "average_salary": 37120.26
+        },
+        {
+          "id": "gt65",
+          "label": "Mayores de 65",
+          "salary_mass": 37634280.13,
+          "employee_count": 1357,
+          "average_salary": 27733.44
+        }
+      ]
+    }
+  ]
+}

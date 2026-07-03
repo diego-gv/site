@@ -95,3 +95,5 @@ nav:
   - Proyectos:
       - projects/index.md
       - Pendiente: projects/pending.md
+  - Notebooks:
+      - proyectos/salario-en-espana.md

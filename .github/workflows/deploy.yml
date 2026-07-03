@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: poetry config virtualenvs.create false && poetry install --no-root --no-interaction --no-ansi
 
+      - name: Build derived salary data
+        run: poetry run python scripts/build_salary_data.py
+
       - name: Build static site
         run: zensical build --clean
 
