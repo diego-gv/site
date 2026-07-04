@@ -1,6 +1,6 @@
 {
     // 👇 devcontainer name
-    "name": "im-diego.es",
+    "name": "site-container",
 
     // 🛠 Modifications over Dockerfile/Compose
     // --------------------------------------
