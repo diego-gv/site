@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "MkDocs: Servidor",
+            "name": "Zensical: Servidor",
             "type": "node-terminal",
             "request": "launch",
-            "command": "mkdocs serve --dev-addr 0.0.0.0:8000",
+            "command": "zensical serve --dev-addr 0.0.0.0:8000",
             "cwd": "${workspaceFolder}"
         }
     ]

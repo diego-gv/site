@@ -18,18 +18,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/configure-pages@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: 3.12
 
       - name: Install Poetry
         run: pip install poetry
@@ -38,10 +32,9 @@ jobs:
         run: poetry config virtualenvs.create false && poetry install --no-root --no-interaction --no-ansi
 
       - name: Build static site
-        run: poetry run mkdocs build --site-dir site
+        run: zensical build --clean
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
@@ -53,6 +46,5 @@ jobs:
     needs: build
 
     steps:
-      - name: Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v5
         id: deployment
-        uses: actions/deploy-pages@v5
