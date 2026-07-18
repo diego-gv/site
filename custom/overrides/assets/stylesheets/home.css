@@ -1,0 +1,352 @@
+:root {
+    --anthracite: #1e222b;
+    --off-white: #f7f9fa;
+    --text-dark: #1e222b;
+    --surface: #fff;
+    --accent: #3b82f6;
+}
+
+.md-main__inner:has(.home-page) {
+    margin-top: 0;
+}
+
+.md-content__inner:has(.home-page) {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.md-content__inner:has(.home-page)::before {
+    display: none;
+}
+
+.home-page section {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.home-icon {
+    display: inline-flex;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: currentColor;
+    vertical-align: -0.2em;
+}
+
+.home-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg-dark {
+    background: var(--anthracite);
+    color: white;
+}
+
+.bg-light {
+    background: var(--off-white);
+    color: var(--text-dark);
+}
+
+#hero {
+    background: var(--anthracite);
+    padding: 120px 0;
+}
+
+.home-page .bg-light h2,
+.home-page .bg-light h3,
+.home-page .bg-light p,
+.home-page .bg-light strong {
+    color: var(--text-dark);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 0;
+    border: none;
+}
+
+.hero-specialty {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.hero-avatar {
+    width: 240px;
+    height: 240px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 0 0 8px rgba(255, 255, 255, 0.05),
+        0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente en cualquier fila */
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.stats-grid > * {
+    /* flex: crecer | encoger | base */
+    flex: 1 1 300px;
+    /* Tu ancho máximo deseado (ajústalo a tu gusto) */
+    max-width: 380px;
+    /* Evita que se encojan de más en pantallas muy pequeñas */
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.stat-card,
+.skill-card,
+.hobby-item {
+    background: var(--surface);
+    transition: transform 0.3s ease;
+}
+
+.stat-card {
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 185px;
+}
+
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.stat-icon {
+    display: inline-flex;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: currentColor;
+    vertical-align: -0.05em;
+}
+
+.stat-label {
+    margin-top: 0.5rem;
+    color: #64748b;
+}
+
+.focus-grid {
+    display: grid;
+    /* Por defecto, 2 columnas iguales */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Cuando la pantalla sea pequeña, pasa a 1 columna */
+@media (max-width: 800px) {
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente en cualquier fila */
+    gap: 20px;
+    width: 100%;
+}
+
+.skills-grid > * {
+    /* flex: crecer | encoger | base */
+    flex: 1 1 300px;
+    /* Tu ancho máximo deseado (ajústalo a tu gusto) */
+    max-width: 280px;
+    /* Evita que se encojan de más en pantallas muy pequeñas */
+    min-width: 180px;
+    box-sizing: border-box;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.45rem;
+    min-height: 150px;
+    padding: 14px 14px 22px;
+    padding-inline: 14px;
+    border-radius: 16px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+    transition: transform 0.3s ease;
+}
+
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente en cualquier fila */
+    gap: 20px;
+    width: 100%;
+}
+
+.hobby-list > * {
+    /* flex: crecer | encoger | base */
+    flex: 1 1 300px;
+    /* Tu ancho máximo deseado (ajústalo a tu gusto) */
+    max-width: 450px;
+    /* Evita que se encojan de más en pantallas muy pequeñas */
+    min-width: 350px;
+    box-sizing: border-box;
+}
+
+.hobby-item {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.focus-card p,
+.hobby-item p,
+.skill-card li {
+    color: inherit;
+}
+
+.feature-card h3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    margin: 0 0 0.2rem;
+}
+
+.skill-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.85rem;
+    text-align: left;
+}
+
+.focus-card p,
+.skill-card ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.focus-card p,
+.hobby-item p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.skill-card li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.skill-list-icon {
+    display: inline-flex;
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.skill-list-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.stat-card:hover,
+.feature-card:hover,
+.skill-card:hover,
+.hobby-item:hover {
+    transform: translateY(-6px);
+}
+
+.hobby-item strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.focus-card h3,
+.skill-card h3 {
+    color: white;
+}
+
+/* Patrón seamless en cuadrícula diamante (iconos tech) */
+/* Para añadir/quitar iconos: edita assets/images/tech-pattern.svg */
+/* Importante: si cambias width/height/viewBox del SVG, actualiza también background-size aquí */
+.tech-pattern-bg {
+    position: relative;
+    background: var(--anthracite);
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.tech-pattern-bg h2,
+.tech-pattern-bg h3 {
+    color: white;
+}
+
+.tech-pattern-bg p,
+.tech-pattern-bg li {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.tech-pattern-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/tech-pattern.svg");
+    background-repeat: repeat;
+    background-position: center;
+    /* Debe coincidir con width/height (o al menos una escala) del tile definido en tech-pattern.svg */
+    background-size: 540px 360px; /* x0.75 */
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tech-pattern-bg > * {
+    position: relative;
+    z-index: 1;
+}

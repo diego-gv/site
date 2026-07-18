@@ -1,0 +1,381 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="home-page">
+    <section id="hero" class="bg-dark">
+        <div class="container hero-container">
+            <img
+                src="{{ 'assets/images/avatar.jpg' | url }}"
+                alt="Diego García Vidal"
+                class="hero-avatar"
+                width="240"
+                height="240"
+                decoding="async"
+            />
+            <div class="hero-content">
+                <h1>Senior Backend Developer</h1>
+
+                <h2 class="hero-specialties">
+                    <span class="hero-specialty">
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/lightning-bolt.svg" %}
+                        </span>
+                        Proactivity
+                    </span>
+                    <span class="hero-specialty">
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/account-group.svg" %}
+                        </span>
+                        Teamwork
+                    </span>
+                    <span class="hero-specialty">
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/school.svg" %}
+                        </span>
+                        Continuous Learning
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-it" class="bg-light">
+        <div class="container">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Actualmente trabajo como Senior Backend Developer en BABEL, una
+                consultora internacional de tecnología. Tengo experiencia en
+                microservicios, arquitectura de sistemas, integraciones con
+                terceros, automatización, web scraping y pipelines de datos.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="stat-icon" aria-hidden="true">
+                            {% include ".icons/material/timer-sand-complete.svg"
+                            %}
+                        </span>
+                        <span id="experience-years"></span>+
+                    </div>
+                    <div class="stat-label">Años experiencia</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="stat-icon" aria-hidden="true">
+                            {% include ".icons/material/link-variant.svg" %}
+                        </span>
+                        <span id="django-experience-years"></span>+
+                    </div>
+                    <div class="stat-label">Años con Django</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="stat-icon" aria-hidden="true">
+                            {% include ".icons/material/snake.svg" %}
+                        </span>
+                        Python
+                    </div>
+                    <div class="stat-label">Stack principal</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">
+                        <span class="stat-icon" aria-hidden="true">
+                            {% include ".icons/material/handshake.svg" %}
+                        </span>
+                        BABEL
+                    </div>
+                    <div class="stat-label">Empresa actual</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="tech-pattern-bg">
+        <div class="container">
+            <div class="focus-grid">
+                <div class="focus-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/desktop-classic.svg" %}
+                        </span>
+                        Desarrollo Backend
+                    </h3>
+                    <p>
+                        Diseño de servicios backend limpios y mantenibles a
+                        través de <strong>buenas prácticas</strong> como TDD
+                        (<em>Test-driven development</em>), código limpio y
+                        principios SOLID.
+                        <strong
+                            >Experiencia en la migración de servicios
+                            legacy.</strong
+                        >
+                    </p>
+                </div>
+
+                <div class="focus-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/crane.svg" %}
+                        </span>
+                        Arquitectura
+                    </h3>
+                    <p>
+                        Desarrollo web basado principalmente en
+                        <strong>sistemas distribuidos e asíncronos</strong> como
+                        Arquitectura de Microservicios, EDA (<em
+                            >Event-Driven Architecture</em
+                        >) así como integraciones con aplicaciones de terceros.
+                    </p>
+                </div>
+
+                <div class="focus-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/chart-arc.svg" %}
+                        </span>
+                        Analisis del dato
+                    </h3>
+                    <p>
+                        Experiencia en el
+                        <strong
+                            >análisis e integración del dato en todo su ciclo de
+                            vida</strong
+                        >
+                        (<em>desde la interfaz API hasta base de datos</em>) así
+                        como la seguridad del mismo. Tengo nociones de ETLs,
+                        data mining, enriquecimiento y pipelines.
+                    </p>
+                </div>
+
+                <div class="focus-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/robot-excited.svg" %}
+                        </span>
+                        Automatización e IA
+                    </h3>
+                    <p>
+                        Integración y desarrollo de
+                        <strong>agentes cognitivos</strong> y
+                        <strong>herramientas de IA</strong> para la optimización
+                        del flujo de desarrollo. Experiencia configurando custom
+                        skills y aplicando técnicas avanzadas de
+                        <strong>optimización de contexto</strong> y
+                        <strong>ahorro de tokens</strong> mediante utilidades
+                        específicas.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Skills & Tools</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/desktop-classic.svg" %}
+                        </span>
+                        Backend
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/python.svg" %}
+                            </span>
+                            Python
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/django.svg" %}
+                            </span>
+                            REST Framework
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/fastapi.svg" %}
+                            </span>
+                            FastAPI
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/flask.svg" %}
+                            </span>
+                            Flask
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/material/api.svg" %}
+                            </span>
+                            REST API
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/material/lan.svg" %}
+                            </span>
+                            Microservicios
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/diving-helmet.svg" %}
+                        </span>
+                        Sistemas
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/postgresql.svg" %}
+                            </span>
+                            PostgreSQL
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/mysql.svg" %}
+                            </span>
+                            MySQL
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/mongodb.svg" %}
+                            </span>
+                            MongoDB
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/redis.svg" %}
+                            </span>
+                            Redis
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/apachekafka.svg" %}
+                            </span>
+                            Kafka
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/rabbitmq.svg" %}
+                            </span>
+                            RabbitMQ
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card feature-card">
+                    <h3>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/tools.svg" %}
+                        </span>
+                        Entorno
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/linux.svg" %}
+                            </span>
+                            Linux
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include
+                                ".icons/material/microsoft-visual-studio-code.svg"
+                                %}
+                            </span>
+                            vscode
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/gnubash.svg" %}
+                            </span>
+                            bash
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/docker.svg" %}
+                            </span>
+                            Docker
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/simple/git.svg" %}
+                            </span>
+                            Git CLI
+                        </li>
+                        <li>
+                            <span class="skill-list-icon" aria-hidden="true">
+                                {% include ".icons/material/aws.svg" %}
+                            </span>
+                            AWS
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-personal" class="bg-light">
+        <div class="container">
+            <h2>Más allá del código</h2>
+
+            <div class="hobby-list">
+                <div class="hobby-item">
+                    <strong>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/hiking.svg" %}
+                        </span>
+                        Escalada y trekking
+                    </strong>
+                    <p>
+                        Disfruto escalando en el rocódromo (o en la montaña) y
+                        manteniéndome activo en la naturaleza. Es mi forma
+                        favorita de desconectar, ponerme a prueba y compartir
+                        buenos momentos con mis compañeros de ruta.
+                    </p>
+                </div>
+
+                <div class="hobby-item">
+                    <strong>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/television-classic.svg"
+                            %}
+                        </span>
+                        Cultura Geek
+                    </strong>
+                    <p>
+                        Me pierden las buenas historias: soy de los que devoran
+                        manga y anime, disfruto de un buen maratón de series o
+                        películas y siempre encuentro un hueco para los
+                        videojuegos.
+                    </p>
+                </div>
+
+                <div class="hobby-item">
+                    <strong>
+                        <span class="home-icon" aria-hidden="true">
+                            {% include ".icons/material/coffee.svg" %}
+                        </span>
+                        Café
+                    </strong>
+                    <p>
+                        Mi combustible diario y fiel compañero. Me acompaña en
+                        cada sesión de código, ya sea para arrancar las mañanas
+                        con energía o para mantener el foco en los proyectos más
+                        exigentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
